@@ -1,0 +1,107 @@
+#contact {
+    // border-top: 2px solid ;
+
+    margin: 20px 0px;
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-item {
+        justify-content: space-around;
+        margin: 10px;
+        padding: 20px;
+
+    }
+
+    .card {
+        box-shadow: lightgrey 0px 0px 11px 5px;
+        border-color: white;
+        border-radius: 10px;
+    }
+
+    .left {
+        max-width: 40%;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .right {
+        width: 60%;
+        background-color: #4682b400;
+        box-shadow: lightgrey 0px 0px 11px 5px;
+        border-color: white;
+        border-radius: 10px;
+
+        .form {
+            max-width: 600px;
+            margin: auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .inputGroup {
+            display: flex;
+            flex-direction: column;
+            margin: 0.3rem 0;
+            label {
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+            }
+
+            input,
+            textarea {
+                padding: 0.65rem 1rem;
+                border: 1px solid black;
+                border-radius: 6px;
+                font-size: 0.8rem;
+                transition: border-color 0.2s ease;
+
+                &:focus {
+                    border-color: #2563eb;
+                    outline: none;
+                }
+            }
+
+        }
+
+
+        button {
+            margin: 0.2rem 0;
+            padding: 0.75rem 1.25rem;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 6px;
+
+            &:hover {
+                box-shadow:#547 2px 3px 3px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}

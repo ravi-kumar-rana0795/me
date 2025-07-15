@@ -1,0 +1,36 @@
+$primary-color: #1d4ed8;
+$text-color: #111827;
+$bg-color: #f1f5f9;
+
+.header {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    nav a {
+      color: white;
+      margin-left: 1rem;
+    }
+  }
+  
+  .themeBtn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
