@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.scss';
+import profile from '../../assets/profile.jpeg';
 
 
 const About: React.FC = () => (
@@ -28,7 +29,7 @@ const About: React.FC = () => (
                 </span>
             </div>
             <div>
-                <img src='/profile.jpeg' />
+                <img src={profile} />
             </div>
         </div>
     </section>

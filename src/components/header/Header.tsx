@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 import './Header.scss'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import resume from '../../assets/resume.pdf';
 
 type MenuType = {
     name:string;
@@ -59,7 +60,7 @@ const Header:React.FC= () => {
                 </ul>
             </nav>
             <button>
-                <a href="/resume.pdf" target='_blank'><span>Resume <FontAwesomeIcon icon={faUpRightFromSquare} size='1x' /> </span> </a>
+                <a href={resume} target='_blank'><span>Resume <FontAwesomeIcon icon={faUpRightFromSquare} size='1x' /> </span> </a>
                 
             </button>
             <button className="menu-toggle" onClick={toggleMenu}>
