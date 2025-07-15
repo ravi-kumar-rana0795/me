@@ -1,0 +1,130 @@
+#experience {
+    // border-top: 2px solid;
+
+    .container {
+        display: flex;
+        gap: .5rem;
+        margin: 20px 0px;
+
+        .card {
+            margin: 5px 10px;
+            color: white;
+            border: 2px solid;
+            border-radius: 7px;
+            padding: 5px;
+        }
+
+        .left {
+            width: 35%;
+
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+
+                li {
+                    // padding: 5px;
+                    // background-color: steelblue;
+                    // border-bottom: 2px;
+                    // box-shadow: 0px 0px 2px 2px;
+
+
+                    span {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 0.9rem;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: steelblue;
+                    }
+
+                }
+
+                .active {
+                    background-color: steelblue;
+                    box-shadow: lightgrey 0px 0px 11px 5px;
+                    border-color: white;
+                }
+            }
+
+        }
+
+        .right {
+            width: 70%;
+            gap: 0.5rem;
+            padding: 10px;
+            background-color: #4682b400;
+            box-shadow: lightgrey 0px 0px 11px 5px;
+            border-color: white;
+            border-radius: 10px;
+
+            div {
+                display: flex;
+            }
+
+            .title {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .line {
+                margin-top: 5px;
+                border: 1px solid white;
+                box-shadow: #547 1px 1px 2px;
+            }
+
+            .projects {
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    margin: 0px;
+                }
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            .role {
+                font-weight: bold;
+                display: block;
+                margin: 5px 0px;
+            }
+
+            .company {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .left {
+            width: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .role{
+                display: inline;
+            }
+
+        }
+
+        .right {
+            width: 100%
+        }
+    }
+}
