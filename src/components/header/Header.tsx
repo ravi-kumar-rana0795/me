@@ -59,7 +59,7 @@ const Header:React.FC= () => {
                 </ul>
             </nav>
             <button>
-                <a href="public/resume.pdf" target='_blank'><span>Resume <FontAwesomeIcon icon={faUpRightFromSquare} size='1x' /> </span> </a>
+                <a href="/resume.pdf" target='_blank'><span>Resume <FontAwesomeIcon icon={faUpRightFromSquare} size='1x' /> </span> </a>
                 
             </button>
             <button className="menu-toggle" onClick={toggleMenu}>

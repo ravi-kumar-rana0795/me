@@ -28,7 +28,7 @@ const About: React.FC = () => (
                 </span>
             </div>
             <div>
-                <img src='assets/profile.jpeg' />
+                <img src='/profile.jpeg' />
             </div>
         </div>
     </section>
