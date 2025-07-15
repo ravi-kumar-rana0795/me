@@ -1,4 +1,4 @@
-import React, { useState, type MouseEventHandler } from 'react';
+import React, { useState} from 'react';
 import './Header.scss'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
