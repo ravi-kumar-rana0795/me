@@ -1,4 +1,4 @@
-import React, { useState, type MouseEventHandler } from 'react';
+import React, { useState} from 'react';
 import './Experience.scss';
 
 type ProjectDetails = {
@@ -78,7 +78,7 @@ const Experience: React.FC = () => {
 
   const [active, setActive] = useState(projects[0].id);
 
-  const onClickHander = (e:React.MouseEvent<HTMLLIElement>,id:string) =>{
+  const onClickHander = (id:string) =>{
     setActive(id);
   }
   return (
@@ -88,8 +88,8 @@ const Experience: React.FC = () => {
         <div className='left'>
           <ul>
             {
-              projects.map((item, idex) => (
-                <li className={`${active === item.id ? 'active' : ''} card`} key={item.id} onClick={ (e)=> onClickHander(e,item.id)}>
+              projects.map((item) => (
+                <li className={`${active === item.id ? 'active' : ''} card`} key={item.id} onClick={ ()=> onClickHander(item.id)}>
                   <span className='role'>{item.role}</span>
                   <span> {item.company}({item.bussiness}) </span>
                 </li>
@@ -99,7 +99,7 @@ const Experience: React.FC = () => {
         </div>
         <div className='right' id="experienceContent">
           {
-            projects.filter(e => e.id === active).map((item, idex) => (
+            projects.filter(e => e.id === active).map((item) => (
               <div key={item.id}>
                 <div className='title'>
                   <span className='role'>{item.role}</span>

@@ -41,7 +41,7 @@ const Header:React.FC= () => {
 
      const[active, setActive] = useState(headerList[0].id);
 
-     const onClickHander = (e:React.MouseEvent<HTMLLIElement>, id:string) =>{
+     const onClickHander = ( id:string) =>{
         setActive(id);
      }
     return (
@@ -50,8 +50,8 @@ const Header:React.FC= () => {
             <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
                 <ul>
                     {
-                        headerList.map((header,idx)=> (
-                            <li key={header.id} className={`${header.id === active ? 'active' : ''}`} onClick={(e)=>onClickHander(e,header.id)}><a href={`#${header.linkTo}`}>{header.name}</a></li>
+                        headerList.map((header)=> (
+                            <li key={header.id} className={`${header.id === active ? 'active' : ''}`} onClick={()=>onClickHander(header.id)}><a href={`#${header.linkTo}`}>{header.name}</a></li>
                         ))
                     }
                     {/* <li><a href="/services">Projects</a></li> */}

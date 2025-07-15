@@ -3,9 +3,9 @@ import './skill.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faJava } from '@fortawesome/free-brands-svg-icons/faJava';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faAws, faDocker, faGit, faGitAlt, faJira, faJs, faKaggle, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt, faJira, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faMicrochip } from '@fortawesome/free-solid-svg-icons/faMicrochip';
-import { faCode, faCube, faLeaf, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faLeaf, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faAccusoft } from '@fortawesome/free-brands-svg-icons/faAccusoft';
 import { faBrain } from '@fortawesome/free-solid-svg-icons/faBrain';
 
