@@ -1,0 +1,53 @@
+@use './variables'  as *;
+
+body {
+    margin: 0;
+    padding: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;; 
+    background-image: url('../assets/bg.png');
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 1rem;
+}
+
+.header-bg {
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.text-color {
+  color: var(--text-color);
+}
+
+.header-title {
+  font-size: $header-font-size;
+  font-weight: bold;
+}
+
+.header-link {
+  font-size: $menu-font-size;
+}
+
+.sectionHeader{
+  box-shadow: #547 1px 2px 2px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
+.line{
+ margin-top: 5px;
+    border: 1px solid white;
+    box-shadow: #547 1px 1px 2px;
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1.5rem;
+      justify-items: normal;
+    }
+   
