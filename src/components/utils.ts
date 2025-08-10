@@ -1,7 +1,10 @@
 
+const baseUrl = 'https://ravi-kumar-rana0795.github.io/my-website-api';
+
 const  fetcher = async<TRespose>(url: string) : Promise<TRespose> => {
+  const fullUrl = `${baseUrl}${url}`;
   try {
-    const res = await fetch(url, {
+    const res = await fetch(fullUrl, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

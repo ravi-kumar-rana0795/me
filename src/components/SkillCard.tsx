@@ -18,7 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ icon, skillName }) => {
                 <FontAwesomeIcon icon={icon} size="2x" color='#1f5886' />
             </div>
             <div className="flex flex-row justify-center">
-                <h3 className="text-[#1f5886] text-center">{skillName}</h3>
+                <h3 className="text-[#1f5886] text-center break-words text-md">{skillName}</h3>
             </div>
         </div>
     );
