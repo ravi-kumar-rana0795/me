@@ -81,6 +81,7 @@ const Experience: React.FC = () => {
 
     const onClickHander = (e: React.MouseEvent<HTMLElement>, id: string) => {
         setActive(id);
+        console.log(e.target);
     }
     return (
         <section id="experience" className='flex-row px-5 py-10 md:px-20 py-10'>

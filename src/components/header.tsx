@@ -38,6 +38,7 @@ export const Header: React.FC = () => {
 
   const onClickHander = (e: React.MouseEvent<HTMLElement>, id: string) => {
     setActive(id);
+    console.log(e.target);
   }
 
 

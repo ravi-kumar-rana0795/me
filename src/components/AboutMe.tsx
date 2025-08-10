@@ -35,6 +35,7 @@ const AboutMe : React.FC = () =>{
   const fullUrl = 'https://raw.githubusercontent.com/ravi-kumar-rana0795/my-website-api/refs/heads/main/aboutMe.json';
   useEffect(()=>{
     fetcher<ProfileData>(fullUrl).then(setAboutMe).catch(console.error);
+    console.log(aboutMe);
   },[])  
   return (
     <section id="about" className="flex-row px-5 py-10 md:px-20 py-10 ">
