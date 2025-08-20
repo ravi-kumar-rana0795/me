@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
 
 
   return (
-    <header className="header-bg px-6 py-4 flex items-center justify-between relative sticky top-0 z-10 shadow-[0_0_11px_5px_#1a1a1a70] ">
+    <header className="bg-[var(--primary-color)] px-6 py-4 flex items-center justify-between relative sticky top-0 z-10 shadow-md ">
       {/* Left: Name */}
       <div className="header-title">Ravi Kumar Rana</div>
 
@@ -51,7 +51,7 @@ export const Header: React.FC = () => {
       <nav className="hidden md:flex flex-1 justify-center space-x-9 items-center">
         {
           headerList.map((header) => (
-            <div key={header.id} className={`${header.id === active ? 'underline' : ''}`} onClick={(e) => onClickHander(e, header.id)}><a href={`#${header.linkTo}`} className="header-link hover:text-blue-100">{header.name}</a></div>
+            <div key={header.id} className={`text-xl font-bold ${header.id === active ? 'underline' : ''}`} onClick={(e) => onClickHander(e, header.id)}><a href={`#${header.linkTo}`} className="header-link hover:text-[var(--secondary-color)]">{header.name}</a></div>
           ))
         }
       </nav>
@@ -62,8 +62,8 @@ export const Header: React.FC = () => {
         <a
           href={resume}
           target="_blank"
-          className="header-link px-4 py-2 flex items-center space-x-2 
-          font-semibold border border-white rounded-md hover:bg-white hover:text-[#1f5886a3] transition-colors"
+          className="header-link px-4 py-2 flex items-center space-x-2 text-xl font-bold
+          font-semibold border border-[var(--secondary-color)] rounded-md hover:bg-white hover:text-[var(--secondary-color)] transition-colors"
         >
           Resume
           <svg
@@ -85,21 +85,21 @@ export const Header: React.FC = () => {
         {/* Hamburger (mobile only, right corner) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+          className="md:hidden flex flex-col justify-center items-center text-xl font-bold w-10 h-10 focus:outline-none"
           aria-label="Toggle menu"
         >
-          <span className="block w-6 h-0.5 bg-white mb-1 rounded"></span>
-          <span className="block w-6 h-0.5 bg-white mb-1 rounded"></span>
-          <span className="block w-6 h-0.5 bg-white rounded"></span>
+          <span className="block w-6 h-0.5 bg-[var(--text-color)] mb-1 rounded"></span>
+          <span className="block w-6 h-0.5 bg-[var(--text-color)] mb-1 rounded"></span>
+          <span className="block w-6 h-0.5 bg-[var(--text-color)] rounded"></span>
         </button>
       </div>
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full header-bg z-50 flex flex-col items-center py-4 space-y-2">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[var(--primary-color)]  z-50 flex flex-col items-center py-4 space-y-2">
           {
             headerList.map((header) => (
-              <div key={header.id} className={`${header.id === active ? 'underline' : ''}`} onClick={(e) => onClickHander(e, header.id)}><a href={`#${header.linkTo}`} className="header-link hover:text-blue-100 block px-4 py-2">{header.name}</a></div>
+              <div key={header.id} className={`${header.id === active ? 'underline' : ''}`} onClick={(e) => onClickHander(e, header.id)}><a href={`#${header.linkTo}`} className="header-link text-xl font-bold hover:text-[var(--secondary-color)] block px-4 py-2">{header.name}</a></div>
             ))
           }       
         </div>

@@ -1,12 +1,13 @@
 // src/styles/_variables.scss
 
 :root {
-  --primary-color: steelblue    ;
-  --secondary-color: #6c757d   ;
+  --primary-color: #f5f5f5    ;
+  --secondary-color: #333333   ;
   --background-color: #f8f9fa  ;
-  --text-color: #fff   ;
+  --text-color: #3d3d3d   ;
+  --link-color: #0056b3; 
+  --hover-colr: #2b2b2b;
 }
-
 
 // Font sizes
 $header-font-size: 1.3rem; 

@@ -91,7 +91,7 @@ const Experience: React.FC = () => {
                     !isSmall && (<div className='w-full md:w-[30%]'>
                         {
                             projects.map((item) => (
-                                <div className={`min-w border-2 border-white-200 rounded-lg shadow-md p-2 m-2 hover:bg-[#1f5886a3] shadow-[0px_0px_11px_5px_lightgrey] ${active === item.id ? 'bg-[#1f5886]' : ''}`} key={item.id} onClick={(e) => onClickHander(e, item.id)}>
+                                <div className={`min-w border-2 border-[var(--primary-color)] rounded-lg shadow-md p-2 m-2 hover:bg-[var(--hover-color)] shadow-md ${active === item.id ? 'border-[var(--secondary-color)]' : ''}`} key={item.id} onClick={(e) => onClickHander(e, item.id)}>
                                     <span className='font-bold'>{item.role}</span>
                                     <span> {item.company}({item.bussiness}) </span>
                                 </div>
@@ -102,7 +102,7 @@ const Experience: React.FC = () => {
 
                 {
                     !isSmall && projects.filter(e => e.id === active).map((item) => (
-                        <div className='w-full md:w-[70%] rounded-lg shadow-md p-4 m-2' style={{ boxShadow: '#d3d3d3 0 0 11px 5px' }} id="experienceContent">
+                        <div className='w-full md:w-[70%] border border-[var(--primary-color)] rounded-lg shadow-md p-4 m-2' id="experienceContent">
                             <div key={item.id}>
                                 <div className='flex flex-column justify-between'>
                                     <span className='font-bold'>{item.role}</span>

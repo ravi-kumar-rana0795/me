@@ -12,13 +12,13 @@ const SkillCard: React.FC<SkillCardProps> = ({ icon, skillName }) => {
             transition-all duration-200
             hover:shadow-xl
             hover:-translate-y-1
-            hover:bg-blue-50
+            hover:bg-[var(--hover-color)]
             cursor-pointer">
             <div className="flex flex-row">
-                <FontAwesomeIcon icon={icon} size="2x" color='#1f5886' />
+                <FontAwesomeIcon icon={icon} size="2x" />
             </div>
             <div className="flex flex-row justify-center">
-                <h3 className="text-[#1f5886] text-center break-words text-md">{skillName}</h3>
+                <h3 className="text-[var(--secondary-color)] text-center break-words text-md">{skillName}</h3>
             </div>
         </div>
     );

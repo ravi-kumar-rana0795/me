@@ -36,6 +36,7 @@ const AboutMe: React.FC = () => {
   useEffect(() => {
     fetcher<ProfileData>(apiUrl).then((data) => {
       setAboutMe(data);
+      console.log(aboutMe);
     }
     ).catch(console.error);
   }, [])
@@ -65,7 +66,7 @@ const AboutMe: React.FC = () => {
           </span>
         </div>
         <div className="flex flex-col justify-center p-[0_10px] mt-5 md:mt-5">
-          <img src={profile} className="w-[80%] border border-[#7a94db] rounded-full mx-auto md:w-[100%]" style={{ boxShadow: '0px 0px 5px 5px' }} />
+          <img src={profile} className="w-[80%] border border-[var(--secondary-color)] rounded-full mx-auto md:w-[100%] shadow-lg"/>
         </div>
       </div>
     </section>
