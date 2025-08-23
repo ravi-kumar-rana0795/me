@@ -1,0 +1,6 @@
+# Allow all web crawlers to access the entire site
+User-agent: *
+Disallow:
+
+# Specify location of the sitemap for efficient indexing
+Sitemap: https://ravi-kumar-rana0795.github.io/me/sitemap.xml
